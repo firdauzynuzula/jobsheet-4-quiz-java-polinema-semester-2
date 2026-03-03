@@ -17,7 +17,7 @@ public class MataKuliah11 {
 
     public int ubahSks(int sks) {
 
-        if (sks  < 2) {
+        if (sks  <= 2) {
             System.out.println("SKS tidak valid. SKS harus kurang dari 2.");
         } else {
             this.sks = sks;
