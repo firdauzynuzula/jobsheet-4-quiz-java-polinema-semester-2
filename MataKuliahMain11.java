@@ -11,10 +11,13 @@ public class MataKuliahMain11 {
         matakuliah1.kodeMatakuliah = "MK001";
         matakuliah1.tampilkanInfoMatakuliah();
         String namaBaru = "Matematika";
-        int sksBaru = 4;
-        String hasilUbah = matakuliah1.ubahMataKuliah(namaBaru, sksBaru);
+        int sksBaru = 1;
+        String hasilUbah = matakuliah1.ubahNamaMatakuliah(namaBaru);
         System.out.println(hasilUbah);
-        
+
+        int sksDiubah = matakuliah1.ubahSks(sksBaru);
+        System.out.println("SKS setelah diubah: " + sksDiubah);
+
         System.out.println("\nInformasi Matakuliah setelah diubah:");
         matakuliah1.tampilkanInfoMatakuliah();
     }

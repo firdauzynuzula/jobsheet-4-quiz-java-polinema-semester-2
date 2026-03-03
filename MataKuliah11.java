@@ -10,9 +10,18 @@ public class MataKuliah11 {
         System.out.println("SKS: " + sks);
     }
     
-    public String ubahMataKuliah(String namaMatakuliah, int sks) {
+    public String ubahNamaMatakuliah(String namaMatakuliah) {
         this.namaMatakuliah = namaMatakuliah;
-        this.sks = sks;
-        return "Mata kuliah berhasil diubah.";
+        return "Nama mata kuliah berhasil diubah.";
+    }
+
+    public int ubahSks(int sks) {
+
+        if (sks  < 2) {
+            System.out.println("SKS tidak valid. SKS harus kurang dari 2.");
+        } else {
+            this.sks = sks;
+        }
+        return this.sks;
     }
 }
